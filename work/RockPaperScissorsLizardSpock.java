@@ -1,10 +1,4 @@
 public class RockPaperScissorsLizardSpock {
-    public static void main(String[] args) {
-        playRPSLSMatch(new HardcodeCasesBot(), new RockBot(), 100, true);
-        playRPSLSMatch(new HardcodeCasesBot(), new CopyBot(), 100, true);
-        playRPSLSMatch(new HardcodeCasesBot(), new RepeatUntilLossBot(), 100, true);
-    }
-
     public static int judgeRPSLS(int player1move, int player2move) {
         if (player1move < 0 || player1move > 4 || player2move < 0 || player2move > 4) {
             throw new IllegalArgumentException();
